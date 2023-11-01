@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Şablonu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="sayfa.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Menü Çubuğu (üstte durur) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#ana-sayfa" class="w3-bar-item w3-button">Catering </a>
+    <!-- Sağdaki menü bağlantıları, küçük ekranlarda gizlenir -->
+    <div class="w3-right w3-hide-small">
+      <a href="#hakkında" class="w3-bar-item w3-button">Hakkında</a>
+      <a href="#menü" class="w3-bar-item w3-button">Menü</a>
+      <a href="#iletisim" class="w3-bar-item w3-button">İletişim</a>
+    </div>
+  </div>
+</div>
+
+<!-- Başlık -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="ana-sayfa">
+  <img class="w3-image" src="https://tampamagazines.com/wp-content/uploads/2018/09/IMG_3679_bc2.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
+  </div>
+</header>
+
+<!-- Sayfa içeriği -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- Hakkında Bölümü -->
+  <div class="w3-row w3-padding-64" id="hakkında">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="table_setting.jpg" class="w3-round w3-image w3-opacity-min" alt="Masa Düzeni" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Catering Hakkında</h1><br>
+      <h5 class="w3-center">1889'dan Beri Geleneek</h5>
+      <p class="w3-large">Catering, 1889 yılında Mr. Smith tarafından kuruldu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sadece mevsimsel malzemeler kullanıyoruz. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menü Bölümü -->
+  <div class="w3-row w3-padding-64" id="menü">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Menümüz</h1><br>
+      <h4>Ekmek Sepeti</h4>
+      <p class="w3-text-grey">Taze pişmiş meyve ekmekleri ve keklerin çeşitleri 5.50</p><br>
+    
+      <h4>Bal ve Badem Granolası ile Meyveler</h4>
+      <p class="w3-text-grey">Bal, kavrulmuş yulaf ezmesi, üzüm, badem ve hurma ile doğal tahıl 7.00</p><br>
+    
+      <h4>Belçika Waffle</h4>
+      <p class="w3-text-grey">Vanilya aromalı hamur ve maltlı un ile 7.50</p><br>
+    
+      <h4>Karışık Yumurtalar</h4>
+      <p class="w3-text-grey">Karışık yumurtalar, kavrulmuş kırmızı biber ve sarımsak, yeşil soğan ile 7.50</p><br>
+    
+      <h4>Mürdüm Eriği Pankekleri</h4>
+      <p class="w3-text-grey">Şurup, tereyağı ve bol miktarda yabanmersini ile 8.50</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="teble-setting-menu.png" class="w3-round w3-image w3-opacity-min" alt="Menü" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- İletişim Bölümü -->
+  <div class="w3-container w3-padding-64" id="iletisim">
+    <h1>İletişim</h1><br>
+    <p>Her türlü etkinlik için tam hizmet catering sunuyoruz, büyük veya küçük. İhtiyaçlarınızı anlıyoruz ve yemeği hem görünüm hem de tat açısından tatmin edecek şekilde sunuyoruz. Bize çekinmeden ulaşın.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Catering Hizmetleri, 42. Living Caddesi, 43043 New York, NY</b></p>
+    <p>Bizimle ayrıca 00553123-2323 numaralı telefondan veya catering@catering.com e-posta adresinden iletişim kurabilirsiniz. Ayrıca buradan bize mesaj gönderebilirsiniz:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Ad" required name="Ad"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="Kaç kişi" required name="KişiSayısı"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Tarih ve saat" required name="tarih" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Mesaj \ Özel İstekler" required name="Mesaj"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">MESAJ GÖNDER</button></p>
+    </form>
+  </div>
+  
+<!-- Sayfa içeriğini bitir -->
+</div>
+
+<!-- Alt Bilgi -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a> tarafından desteklenmektedir</p>
+</footer>
+
+</body>
+</html>
